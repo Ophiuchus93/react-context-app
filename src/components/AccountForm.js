@@ -14,13 +14,13 @@ class AccountForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    this.updateAccount(this.state)
+   this.props.updateAccount(this.state)
   }
 
   render () {
     const { username, email, name, } = this.state;
     return (
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
         <Form.Input
           label="New Username"
           type="text"

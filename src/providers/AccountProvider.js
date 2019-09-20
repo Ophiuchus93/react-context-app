@@ -16,7 +16,7 @@ class AccountProvider extends React.Component {
   };
 
   updateAccount = ( account ) => {
-    this.setState({ ... account, })
+    this.setState({ ...account, })
   }
 
   render () {
