@@ -18,28 +18,29 @@ class AccountForm extends React.Component {
   }
 
   render () {
+    const { username, email, name, } = this.state;
     return (
       <Form>
         <Form.Input
           label="New Username"
           type="text"
           name="username"
-          // value={username}
-          // onChange={this.handleChange}
+          value={username}
+          onChange={this.handleChange}
         />
         <Form.Input 
           label="Update email"
           type="text"
           name="email"
-          // value={email}
-          // onChange={this.handleChange}
+          value={email}
+          onChange={this.handleChange}
         />
         <Form.Input 
           label="Change your name"
           type="text"
           name="name"
-          // value={name}
-          // onChange={this.handleChange}
+          value={name}
+          onChange={this.handleChange}
         />
       <Form.Button color="blue">Submit</Form.Button>
       </Form>
